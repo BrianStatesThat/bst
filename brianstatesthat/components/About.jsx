@@ -1,7 +1,6 @@
-import { assets } from '@/assets/assets';
+import { assets, infoList } from '@/assets/assets';
 import Image from 'next/image';
 import React from 'react';
-import { infoList } from '@/assets/assets';
 
 const About = () => {
   return (
@@ -20,7 +19,7 @@ const About = () => {
           </div>
 
           <ul>
-            {infoList.map(({icon, iconDark, title, description}, index)=>{
+            {infoList.map(({icon, iconDark, title, description}, index) => {
               <li key={index}>
                 <Image src={icon} alt={title} />
                 <h3>{title}</h3>
