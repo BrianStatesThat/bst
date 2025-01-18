@@ -18,14 +18,14 @@ const About = () => {
            I'm dedicated to creating seamless, intuitive web experiences that prioritize the needs and satisfaction of users, making technology more accessible and impactful for everyone.
           </div>
 
-          <ul>
-            {infoList.map(({icon, iconDark, title, description}, index) => {
-              <li key={index}>
-                <Image src={icon} alt={title} />
+          <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl' >
+            {infoList.map(({icon, iconDark, title, description}, index) => (
+              <li key={index} className='border-[0.5px] border-gray-400 rounde-xl p-6 cursor-pointer'>
+                <Image src={icon} alt={title} className='w-7 mt-3' />
                 <h3>{title}</h3>
                 <p>{description}</p>
               </li>
-            })}
+              ))}
           </ul>
         </div>
     </div>
@@ -33,3 +33,4 @@ const About = () => {
 }
 
 export default About
+
