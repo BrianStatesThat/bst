@@ -22,7 +22,7 @@ const About = () => {
             {infoList.map(({icon, iconDark, title, description}, index) => (
               <li key={index} className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer'>
                 <Image src={icon} alt={title} className='w-7 mt-3' />
-                <h3>{title}</h3>
+                <h3 className='my-4 font-semibold text-gray-700'>{title}</h3>
                 <p>{description}</p>
               </li>
               ))}
