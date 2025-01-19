@@ -13,9 +13,11 @@ const About = () => {
             <Image src={assets.user_image} alt='user' className='w-full rounded-3xl' />
           </div>
           <div className='flex-1'>
-          With a solid background in front-end development, IT support, and cybersecurity,
-           I combine technical expertise with strong customer service experience. My years in customer service have shaped my ability to understand client needs, communicate effectively, and deliver user-centered solutions.
-           I'm dedicated to creating seamless, intuitive web experiences that prioritize the needs and satisfaction of users, making technology more accessible and impactful for everyone.
+            <p className='mb-10 max-w-2xl font-Ovo'>
+              With a solid background in front-end development, IT support, and cybersecurity,
+              I combine technical expertise with strong customer service experience. My years in customer service have shaped my ability to understand client needs, communicate effectively, and deliver user-centered solutions.
+              I'm dedicated to creating seamless, intuitive web experiences that prioritize the needs and satisfaction of users, making technology more accessible and impactful for everyone.
+            </p>
           </div>
 
           <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl' >
