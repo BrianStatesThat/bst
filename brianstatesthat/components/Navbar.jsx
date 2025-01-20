@@ -46,8 +46,8 @@ const Navbar = () => {
                 className='w-28 cursor-pointer mr-14' />
             </a>
 
-            <ul className='hidden md:flex items-center gap-6 
-            lg:gap-8 rounded-full px-12 py-3 bg-white/80 backdrop-blur-md shadow-md z-50'>
+            <ul className={`hidden md:flex items-center gap-6 
+            lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : "bg-white/80 backdrop-blur-md shadow-md z-50"} `}>
                 <li><a href="#top">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
