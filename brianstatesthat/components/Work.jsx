@@ -12,15 +12,18 @@ const Work = () => {
             Welcome to my portfolio! Explore my journey in web development and AI prompting. Discover projects showcasing my expertise in front-end development.
         </p>
 
-        <div>
+        <div className='grid grid-cols-auto my-10 gap-5'>
             {workData.map((project, index)=>(
-                <div key={index} style={{backgroundImage: `url(${project.bgImage})`}}>
+                <div className='aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group'
+                 key={index} style={{backgroundImage: `url(${project.bgImage})`}}>
                     <div>
-                        <h2>{project.title}</h2>
-                        <p>{project.description}</p>
-                    </div>
-                    <div>
-                        <Image src={assets.send_icon} alt='send icon' className='w-5' />
+                        <div>
+                            <h2>{project.title}</h2>
+                            <p>{project.description}</p>
+                        </div>
+                        <div>
+                            <Image src={assets.send_icon} alt='send icon' className='w-5' />
+                        </div>
                     </div>
                 </div>
             ))}
