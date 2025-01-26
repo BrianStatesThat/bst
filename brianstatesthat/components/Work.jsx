@@ -15,7 +15,7 @@ const Work = () => {
         <div className='grid grid-cols-auto my-10 gap-5'>
             {workData.map((project, index)=>(
                 <div className='aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group'
-                 key={index} style={{backgroundCurl(${project.bgImage})`}}>
+                 key={index} style={{backgroundImage: `url(${project.bgImage})`}}>
                     <div>
                         <div>
                             <h2>{project.title}</h2>
@@ -31,6 +31,5 @@ const Work = () => {
     </div>
   )
 }
-
 
 export default Work
