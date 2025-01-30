@@ -11,6 +11,19 @@ const Contact = () => {
         Share your name, email, and a little about your project or question.
          I would love to hear from you! Once you are ready, click Submit, and I will be in touch soon to help however I can. Looking forward to connecting!
         </p>
+
+        <form className='max-w-2xl mx-auto'>
+          <div className='grid grid-cols-auto gap-6 mt-10 mb-8'>
+            <input className='flex-1 p-3 outline-none border-[0.5px] border-gray-400
+            rounded-md bg-white' type="text" placeholder='Please enter your name' required />
+            <input className='flex-1 p-3 outline-none border-[0.5px] border-gray-400
+            rounded-md bg-white' type="email" placeholder='Please enter your email address' required />
+          </div>
+          <textarea className='w-full p-4 outline-none border-[0.5px] border-gray-400
+            rounded-md bg-white' rows='6' placeholder='Please enter your message' name="" id="" required ></textarea>
+
+          <button type='submit' >Submit now</button>
+        </form>
     </div>
   )
 }
